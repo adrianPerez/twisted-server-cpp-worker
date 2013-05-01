@@ -53,6 +53,7 @@ class LaunchResource(Resource):
             # everything else gets split up and put in the args array
             # if you were passing solver specific commands,
             # you could also pass to args something like "-n 4"
+            # if you are in a unix-like environment, you will need to change 'clingo.exe' to just 'clingo'
             command = aspDir + "clingo.exe"
             args = [ruleSetDir + aspFile]
         
